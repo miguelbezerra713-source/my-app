@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+header {
+    background: #1e1e2f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background: #1e1e2f;
+    color: white;
+    padding-top: 20px;
+    transition: 0.3s;
+}
+
+.sidebar div {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.sidebar div:hover {
+    background: #2a2a40;
+}
+
+/* MAIN CONTENT */
+
+.main {
+    margin-left: 200px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+/* CARDS */
+
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* BUTTONS */
+
+button {
+    padding: 8px 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #4a6cf7;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3651d4;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .sidebar div {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    header {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+}

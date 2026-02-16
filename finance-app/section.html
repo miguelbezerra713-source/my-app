@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Sheets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadSheets()">
+
+<header>My Sheets</header>
+
+<div class="main">
+
+    <h3>Calculation Sheets</h3>
+    <button onclick="createSheet('calc')">Create Calculation Sheet</button>
+    <div id="calcList"></div>
+
+    <hr style="margin:30px 0;">
+
+    <h3>Text Sheets</h3>
+    <button onclick="createSheet('text')">Create Text Sheet</button>
+    <div id="textList"></div>
+
+    <div class="link" onclick="go('dashboard.html')">
+        Back
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
